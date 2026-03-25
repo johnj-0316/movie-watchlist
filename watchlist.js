@@ -25,7 +25,7 @@ function handleContainer(data) {
     
     return `
         <div class="movie-container">
-            <img onerror="this.src = './images/default.png'" src="${Poster}"/>
+            <img onerror="this.src = './images/default.jpeg'" src="${Poster}"/>
             <div>
                 <div class="movie-line">
                     <h2 class="movie-title">${Title}</h2>
