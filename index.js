@@ -20,6 +20,13 @@ movieSection.addEventListener('click', e => {
 });
 
 function alreadySaved(imdbID) {
+    try {
+        JSON.parse(localStorage.saved);
+    }
+    catch (err) {
+        localStorage.saved = JSON.stringify([]);
+    }
+    
     const saved = JSON.parse(localStorage.saved);
     return saved.includes(imdbID);
 }
